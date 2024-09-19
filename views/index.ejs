@@ -1,0 +1,20 @@
+<% let title = "Template engine"%>
+<%= title %>
+
+<br>
+<%= caption %>
+
+<table>
+    <tr>
+        <th>NO</th>
+        <th>NPM</th>
+        <th>NAMA</th>
+    </tr>
+    <% data.forEach((element,no) => { %>
+        <tr>
+            <td><%= no+=1 %></td>
+            <td><%= element.npm %></td>
+            <td><%= element.nama%></td>
+        </tr>
+    <%}); %>
+</table>
